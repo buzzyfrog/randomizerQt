@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Рандомайзер</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>60</y>
+      <width>211</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <widget class="QPushButton" name="cubes">
+     <property name="text">
+      <string>бросить кубики</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="yesOrNo">
+     <property name="text">
+      <string>да или нет</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="letters">
+     <property name="text">
+      <string>буквы</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="rules">
+     <property name="text">
+      <string>правила</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="history">
+     <property name="text">
+      <string>история</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
