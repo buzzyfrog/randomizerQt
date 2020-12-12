@@ -8,3 +8,5 @@ class Answer(QMainWindow, Ui_Answer):
     def __init__(self, parent=None):
         super(Answer, self).__init__(parent)
         self.setupUi(self)
+
+
