@@ -15,5 +15,10 @@ class Cubes(QMainWindow, Ui_Cubes):
         n = int(self.comboBox.currentText())
         res = [randint(1, 6) for _ in range(n)]
         res_final = sum(res)
+        # output result
         self.Label_cube_1.setText(str(res))
         self.Output.setText(str(res_final))
+        # write result to the file
+        with open('db.txt', 'a') as file:
+            file.write("Количество кубиков: " + str(n) + ";" + " сумма: " + str(res_final) + ";" + '\n')
+
