@@ -9,6 +9,7 @@ class Cubes(QMainWindow, Ui_Cubes):
         super(Cubes, self).__init__(parent)
         self.setupUi(self)
         self.pushButton_drop.clicked.connect(self.roll_cubes)
+        self.pushButton_back.clicked.connect(self.close)
 
     # function for checking combobox item
     def roll_cubes(self):
@@ -21,4 +22,5 @@ class Cubes(QMainWindow, Ui_Cubes):
         # write result to the file
         with open('db.txt', 'a') as file:
             file.write("Количество кубиков: " + str(n) + ";" + " сумма: " + str(res_final) + ";" + '\n')
+
 
