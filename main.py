@@ -20,6 +20,7 @@ class Main(QMainWindow, Ui_MainWindow):
         self.cubes.clicked.connect(self.open_cubes)
         self.history.clicked.connect(self.open_history)
 
+
     def open_answer(self):
         ans.show()
 
@@ -34,6 +35,7 @@ class Main(QMainWindow, Ui_MainWindow):
 
     def open_history(self):
         his.show()
+        his.show_history()
 
 
 if __name__ == "__main__":
