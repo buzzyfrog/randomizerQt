@@ -13,10 +13,10 @@ class Letters(QMainWindow, Ui_Letters_form):
         self.final_result = []
 
     def rnd_letter(self):
-        chars = ['а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т',
-                 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я']
-        val = randint(1, len(chars))
-        result = chars[val].upper()
+        chars = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т',
+                 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я']
+        val = randint(0, len(chars) - 1)
+        result = chars[val]
         self.final_result.append(result)
         self.Output.setText(chars[val])
 
