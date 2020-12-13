@@ -24,22 +24,25 @@ class Ui_Answer(object):
 "border: 1px solid #000000\n"
 "}")
         self.Image_2.setText("")
-        self.Image_2.setPixmap(QtGui.QPixmap("src/like.png"))
+        self.Image_2.setPixmap(QtGui.QPixmap("../src/like.png"))
         self.Image_2.setScaledContents(True)
         self.Image_2.setObjectName("Image_2")
-        self.Output_2 = QtWidgets.QLineEdit(Answer)
-        self.Output_2.setGeometry(QtCore.QRect(380, 420, 71, 71))
-        font = QtGui.QFont()
-        font.setPointSize(18)
-        self.Output_2.setFont(font)
-        self.Output_2.setText("")
-        self.Output_2.setObjectName("Output_2")
         self.CreateAnswer_2 = QtWidgets.QPushButton(Answer)
         self.CreateAnswer_2.setGeometry(QtCore.QRect(260, 510, 321, 111))
         font = QtGui.QFont()
         font.setPointSize(12)
         self.CreateAnswer_2.setFont(font)
         self.CreateAnswer_2.setObjectName("CreateAnswer_2")
+        self.Output_2 = QtWidgets.QLabel(Answer)
+        self.Output_2.setGeometry(QtCore.QRect(370, 410, 91, 91))
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.Output_2.setFont(font)
+        self.Output_2.setStyleSheet("QLabel{\n"
+"border: 1px solid #000000\n"
+"}")
+        self.Output_2.setText("")
+        self.Output_2.setObjectName("Output_2")
 
         self.retranslateUi(Answer)
         QtCore.QMetaObject.connectSlotsByName(Answer)
@@ -49,6 +52,5 @@ class Ui_Answer(object):
         Answer.setWindowTitle(_translate("Answer", "да или нет"))
         self.BackBtn.setText(_translate("Answer", "//назад"))
         self.CreateAnswer_2.setText(_translate("Answer", "Сформировать ответ!"))
-
 
 

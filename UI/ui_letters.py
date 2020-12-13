@@ -19,13 +19,17 @@ class Ui_Letters_form(object):
         self.pushButton_back.setGeometry(QtCore.QRect(0, 0, 111, 41))
         self.pushButton_back.setObjectName("pushButton_back")
         self.pushButton_get = QtWidgets.QPushButton(Letters_form)
-        self.pushButton_get.setGeometry(QtCore.QRect(210, 400, 201, 61))
+        self.pushButton_get.setGeometry(QtCore.QRect(230, 410, 201, 61))
         self.pushButton_get.setObjectName("pushButton_get")
-        self.Output = QtWidgets.QLineEdit(Letters_form)
-        self.Output.setGeometry(QtCore.QRect(270, 200, 81, 121))
+        self.Output = QtWidgets.QLabel(Letters_form)
+        self.Output.setGeometry(QtCore.QRect(250, 210, 161, 171))
         font = QtGui.QFont()
         font.setPointSize(36)
         self.Output.setFont(font)
+        self.Output.setStyleSheet("QLabel{\n"
+"border: 1px solid #000000\n"
+"}")
+        self.Output.setText("")
         self.Output.setObjectName("Output")
 
         self.retranslateUi(Letters_form)
@@ -36,7 +40,5 @@ class Ui_Letters_form(object):
         Letters_form.setWindowTitle(_translate("Letters_form", "получить букву"))
         self.pushButton_back.setText(_translate("Letters_form", "//Назад"))
         self.pushButton_get.setText(_translate("Letters_form", "Получить букву!"))
-        self.Output.setText(_translate("Letters_form", "А"))
-
 
 
