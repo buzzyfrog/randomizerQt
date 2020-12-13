@@ -22,10 +22,13 @@ class Letters(QMainWindow, Ui_Letters_form):
 
     def write_fl(self):
         with open('db.txt', 'a') as file:
-            file.write("Сгенерированные буквы: ")
-            for i in range(len(self.final_result)):
-                file.write(self.final_result[i] + ' ')
-            file.write('\n')
+            if not self.final_result:
+                pass
+            else:
+                file.write("Сгенерированные буквы: ")
+                for i in range(len(self.final_result)):
+                    file.write(self.final_result[i] + ' ')
+                file.write('\n')
 
     def closeEvent(self, event):
         self.write_fl()

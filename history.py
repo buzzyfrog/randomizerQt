@@ -18,7 +18,7 @@ class History(QMainWindow, Ui_History_form):
 
     def delete_history(self):
         with open('db.txt', 'w') as file:
-            file.write(' ')
+            file.truncate()
         with open('db.txt', 'r') as file:
             txt = file.read()
         self.textEdit.setText(txt)
