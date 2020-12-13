@@ -20,7 +20,6 @@ class Main(QMainWindow, Ui_MainWindow):
         self.cubes.clicked.connect(self.open_cubes)
         self.history.clicked.connect(self.open_history)
 
-
     def open_answer(self):
         ans.show()
 
