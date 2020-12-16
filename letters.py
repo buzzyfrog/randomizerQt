@@ -21,7 +21,7 @@ class Letters(QMainWindow, Ui_Letters_form):
         self.Output.setText(chars[val])
 
     def write_fl(self):
-        with open('db.txt', 'a') as file:
+        with open('db.txt', 'a', encoding='utf-8') as file:
             if not self.final_result:
                 pass
             else:

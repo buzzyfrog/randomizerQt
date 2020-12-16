@@ -12,13 +12,13 @@ class History(QMainWindow, Ui_History_form):
         self.pushButton.clicked.connect(self.close)
 
     def show_history(self):
-        with open('db.txt', 'r+') as file:
+        with open('db.txt', 'r+', encoding='utf-8') as file:
             txt = file.read()
         self.textEdit.setText(txt)
 
     def delete_history(self):
-        with open('db.txt', 'w') as file:
+        with open('db.txt', 'w', encoding='utf-8') as file:
             file.truncate()
-        with open('db.txt', 'r') as file:
+        with open('db.txt', 'r', encoding='utf-8') as file:
             txt = file.read()
         self.textEdit.setText(txt)

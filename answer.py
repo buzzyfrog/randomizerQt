@@ -25,7 +25,7 @@ class Answer(QMainWindow, Ui_Answer):
         self.Output_2.setText(self.final_result[-1])
 
     def write_fl(self):
-        with open('db.txt', 'a') as file:
+        with open('db.txt', 'a', encoding='utf-8') as file:
             if not self.final_result:
                 pass
             else:

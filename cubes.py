@@ -19,7 +19,7 @@ class Cubes(QMainWindow, Ui_Cubes):
         self.Label_cube_1.setText(str(res))
         self.Output.setText(str(res_final))
         # write result to the file
-        with open('db.txt', 'a') as file:
+        with open('db.txt', 'a', encoding='utf-8') as file:
             file.write("Количество кубиков: " + str(n) + ";" + " сумма: " + str(res_final) + ";" + '\n')
 
 

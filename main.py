@@ -22,7 +22,7 @@ class Main(QMainWindow, Ui_MainWindow):
 
         # create db.txt file
         if not os.path.isfile("db.txt"):
-            with open('db.txt', 'w') as file:
+            with open('db.txt', 'w', encoding='utf-8') as file:
                 file.write(' ')
         
 
