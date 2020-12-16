@@ -8,7 +8,7 @@ import letters
 import rules
 import cubes
 import history
-
+import os
 
 class Main(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -19,6 +19,12 @@ class Main(QMainWindow, Ui_MainWindow):
         self.rules.clicked.connect(self.open_rules)
         self.cubes.clicked.connect(self.open_cubes)
         self.history.clicked.connect(self.open_history)
+
+        # create db.txt file
+        if not os.path.isfile("db.txt"):
+            with open('db.txt', 'w') as file:
+                file.write(' ')
+        
 
     def open_answer(self):
         ans.show()

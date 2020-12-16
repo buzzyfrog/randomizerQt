@@ -12,7 +12,7 @@ class History(QMainWindow, Ui_History_form):
         self.pushButton.clicked.connect(self.close)
 
     def show_history(self):
-        with open('db.txt', 'r') as file:
+        with open('db.txt', 'r+') as file:
             txt = file.read()
         self.textEdit.setText(txt)
 
